@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    
+<!-- CS bot start -->
+  <category>
+    <pattern>Hello</pattern>
+    <template>Hello, I am the CS job bot. I am here to help you pick a career that you can use with your Computer Science Degree! Do you know which job you would like to pursue? (Please click Yes or No.
+        <button>
+            <text>Yes!</text>
+            <postback>YesBegin</postback>
+        </button>
+        <button>
+            <text>No!</text>
+            <postback>NoBegin</postback>
+        </button>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>*</pattern>
+    <template>Please enter "Hello" or use the button prompts. Thank you.</template>
+</category>
+  
+  <!--Yes Begin -->
+ <category>
+     <pattern>YesBegin</pattern>
+     <template>Which of the following jobs would you be interested in? (Please click a button.)
+      <!--YJ1 -->
+     <button>
+         <text>Data Engineer</text>
+         <postback>YJ1</postback>
+     </button>
+           <!--YJ2 -->
+     <button>
+         <text>IT Consultant</text>
+         <postback>YJ2</postback>
+     </button>
+           <!--YJ3 -->
+     <button>
+         <text>Robotics Software Engineer</text>
+         <postback>YJ3</postback>
+     </button>
+           <!--YJ4 -->
+     <button>
+         <text>Back-End Developer</text>
+         <postback>YJ4</postback>
+     </button>
+           <!--YJ5 -->
+     <button>
+         <text>Front-End Web Developer</text>
+         <postback>YJ5</postback>
+     </button>
+     </template>
+ </category>
+ 
+ <!--Yes Data Engineer -->
+ <category>
+     <pattern>YJ1</pattern>
+     <template> Data Engineer is a good choice. They deal with collecting data so that organizations can use it for their benefit. Good Luck!
+     </template>
+ </category>
+ 
+ <!--Yes IT Consultant -->
+ <category>
+     <pattern>YJ2</pattern>
+     <template>IT Consultant is a good choice. They provide advice to help people and companies use their technological devices efficiently. Good Luck!
+     </template>
+ </category>
+ 
+ <!--Yes Robotics Software Engineer -->
+ <category>
+     <pattern>YJ3</pattern>
+     <template> Robotics Software Engineer is a good choice. They are responsible for researching robotic systems, and building applications and machines. Good Luck!
+     </template>
+ </category>
+ 
+ <!--Yes Back-End Developer -->
+ <category>
+     <pattern>YJ4</pattern>
+     <template>Back-End Developer is a good choice. They help things such as websites, software, and IT systems function properly. Good Luck!
+     </template>
+ </category>
+ 
+ <!--Yes Front-End Web Developer -->
+ <category>
+     <pattern>YJ5</pattern>
+     <template>Front-End Web Developer Career is a good choice. They help develop the user-side of applications such as web sites, and what people will interact with. Good Luck!
+     </template>
+ </category>
+ 
+ <!--No Begin -->
+ <category>
+     <pattern>NoBegin</pattern>
+     <template>Understandable, This bot will help you figure out which career path is best for you! Do you like working with Data, Consolations, Robots, Code, or Visuals? (Please click a button.)
+      <!--NJ1 -->
+     <button>
+         <text>Data</text>
+         <postback>NJ1</postback>
+     </button>
+           <!--NJ2 -->
+     <button>
+         <text>Consultations</text>
+         <postback>NJ2</postback>
+     </button>
+           <!--NJ3 -->
+     <button>
+         <text>Robots</text>
+         <postback>NJ3</postback>
+     </button>
+           <!--NJ4 -->
+     <button>
+         <text>Code</text>
+         <postback>NJ4</postback>
+     </button>
+           <!--NJ5 -->
+     <button>
+         <text>Visuals</text>
+         <postback>NJ5</postback>
+     </button>
+</template>
+</category>
+
+<!--No Data Engineer -->
+ <category>
+     <pattern>NJ1</pattern>
+     <template> Data Engineer would be a good choice for you. They deal with collecting data so that organizations can use it for their benefit. Good Luck!
+     </template>
+ </category>
+ 
+ <!--No IT Consultant -->
+ <category>
+     <pattern>NJ2</pattern>
+     <template>IT Consultant would be a good choice for you. They provide advice to help people and companies use their technological devices efficiently. Good Luck!
+     </template>
+ </category>
+ 
+ <!--No Robotics Software Engineer -->
+ <category>
+     <pattern>NJ3</pattern>
+     <template> Robotics Software Engineer would be a good choice for you. They are responsible for researching robotic systems, and building applications and machines. Good Luck!
+     </template>
+ </category>
+ 
+ <!--No Back-End Developer -->
+ <category>
+     <pattern>NJ4</pattern>
+     <template>Back-End Developer would be a good choice for you. They help things such as websites, software, and IT systems function properly. Good Luck!
+     </template>
+ </category>
+ 
+ <!--No Front-End Web Developer -->
+ <category>
+     <pattern>NJ5</pattern>
+     <template>Front-End Web Developer Career would be a good choice for you. They help develop the user-side of applications such as web sites, and what people will interact with. Good Luck!
+     </template>
+ </category>
+
+
+</aiml>
